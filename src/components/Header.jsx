@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div class="container">
   <div class="header">
-    <h1>Fashionista</h1>
+    <h1 style={{ textAlign: "left" }}>Fashionista</h1>
     <nav>
       <a href="#">Home</a>
       <a href="#">Men</a>

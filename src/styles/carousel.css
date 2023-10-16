@@ -1,47 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@1&family=Merriweather:wght@300&display=swap');
+
 .carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .carousel-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    z-index: 1; 
-  }
-  
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  font-size: 4vw; 
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  width: 80%; 
+}
+
+.carousel-text p {
+  font-style: italic;
+  font-size: 2vw; 
+}
+
+.carousel {
+  width: 100%;
+  height: 50vh; 
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
   .carousel {
-    width: 100%;
-    height: 300px; 
-    overflow: hidden;
-    position: relative;
-    z-index: 0; 
+    height: 200px;
   }
-  
-  .carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .carousel-text {
+    font-size: 6vw; 
   }
-  
-  
-  @media (max-width: 768px) {
-    .carousel {
-      height: 200px; 
-    }
+
+  .carousel-text p {
+    font-size: 3vw; 
   }
-  
-  
-  
-  @media (max-width: 768px) {
-    .carousel {
-      height: 200px; 
-    }
-  }
-  
+}

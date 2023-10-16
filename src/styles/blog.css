@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:ital@1&family=Merriweather:wght@300&display=swap');
+
+.collage h1{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 60px;
+  margin: 20px 0 0 0 ;
+}
+.collage h3{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  margin:0 0 20px 0;
+  font-size: 30px;
+}
+
+.container-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  height: 50%;
+  margin: 10px;
+  box-shadow: 10px 14px 20px 0px rgba(226,204,189,1);
+  position: relative;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+  background-size: cover;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.img-1:before,
+.img-2:before,
+.img-3:before,
+.img-4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none; 
+}
+
+.img-1 p,
+.img-2 p,
+.img-3 p,
+.img-4 p {
+  font-family: 'Merriweather';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  text-align: center;
+  color: white; 
+}
+
+.img-1 button,
+.img-2 button,
+.img-3 button,
+.img-4 button {
+  font-family: 'Arial';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.img-1{
+  background: url('../images/10.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.img-2{
+  background: url('../images/4.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.img-3{
+  background: url('../images/9.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.img-4 {
+  background: url('../images/8.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .row{
+    height: 600px; 
+  }
+  
+  .img{
+    height: 50%;  
+  }
+  
+  .img-1,
+  .img-4 {
+    width: 24%;
+  }
+
+  .img-2,
+  .img-3 {
+    width: 70%;
+  }
+}
+
